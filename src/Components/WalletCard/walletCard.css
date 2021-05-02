@@ -1,0 +1,69 @@
+.wallet-paragraph{
+    text-align: center;
+    font-size: 14px;
+    color: #CFD0D4;
+    margin-top: 20px;
+}
+.create-button{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    margin: 10px 0px 5px 0px;
+    padding: 5px 15px 5px 15px;
+}
+.wallet-icon-container{
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 70px;
+    padding: 20px;
+}
+
+/* Editing State styling  */
+.balance-ammount{
+    font-size: 26px;
+    font-weight: 600;
+}
+.dollar-sign{
+    margin-right: 8px;
+}
+.actual-balance{
+    text-align: center;
+    margin-top: -13px;
+    font-size: 14px;
+    color: #B3B4BB;
+}
+.charge-date{
+    font-size: 14px;
+    color: #B3B4BB;
+}
+.charge-ammount{
+    color: red;
+    font-size: 14px;
+}
+.take-action{
+    margin-top: -15px;
+    font-size: 14px;
+    color: #B3B4BB;
+
+}
+.withdraw-button{
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: transparent;
+    width: 130px;
+    height: 40px;
+    margin-right: 5px;
+}
+.topup-button{
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    width: 130px;
+    height: 40px;
+    margin-left: 5px;
+}
+.setting-icon{
+    font-size: 18px;
+}

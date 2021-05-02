@@ -1,0 +1,179 @@
+.cards {
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+    height: 95%;
+    background-color: white;
+  }
+  .cards-title{
+      text-align: left;
+      display: flex;
+      align-content: left;
+      width: 100%;
+      font-weight: 600;
+  }
+  .cards-content{
+    right: 0;
+    text-align: right;
+    width: 100%;
+    color: #CBCBD0;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .cards-headers{
+    width: 100%;
+    display: flex;
+
+  }
+  .body-icon{
+      font-size: 25px;
+      color: #CFD0D4;
+      margin: auto 0px auto 0px;
+  }
+  .body-content-container{
+      display: flex;
+      width: auto;
+      flex-direction: inherit;
+  }
+  .body-content{
+      text-align: left;
+      margin-left: 10px;
+      font-weight: 500;
+      margin-top: 10px;
+  }
+  .body-lebel{
+      display: flex;
+  }
+  .body-lebel1{
+      display: flex;
+  }
+  .body-sub-label{
+    display: flex;
+    color: #CFD0D4;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+/* check box  styling*/
+
+  /* The container */
+.containers {
+  display: flex;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  float: right;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containers input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  height: 25px;
+  width: 25px;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containers input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containers .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 8px;
+  height: 14px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+/* The containers */
+.containers {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+/* Create a custom radio button */
+.checkmarks {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+
+/* When the radio button is checked, add a blue background */
+.containers input:checked ~ .checkmarks {
+  background-color: black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarks:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containers input:checked ~ .checkmarks:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containers .checkmarks:after {
+     top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
