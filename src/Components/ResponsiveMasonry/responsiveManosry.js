@@ -41,7 +41,7 @@ class ResponsiveManosry extends Component {
                             id="image"
                             key={i}
                             src={image}
-                            style={i%2?{width: "100%",height:"150px", display: "block",borderRadius:"10px"}:{width: "100%",height:"120px", display: "block",borderRadius:"10px"}}
+                            style={i%2?{width: "100%",height:"149px", display: "block",borderRadius:"10px"}:{width: "100%",height:"120px", display: "block",borderRadius:"10px"}}
                             alt=""
                         />
 
