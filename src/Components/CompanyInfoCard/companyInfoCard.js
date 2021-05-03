@@ -53,7 +53,7 @@ render() {
                             <div style={{margin:"auto 10px auto 0px"}}>
                             <BiBuildings/>
                             </div>
-                            <input type="text" placeholder="Beer pub srl" className="edit-input"/>
+                            <input type="text" id="fname" name="fname" value="Beer pub srl" className="edit-input"/>
                         </div>
                     </CardBodyContent>
 
@@ -63,10 +63,10 @@ render() {
                             <GoLocation/>
                             </div>
                             <div>
-                                <input type="text" placeholder="via Americo, 14" className="edit-input"/>
+                                <input type="text" value="via Americo, 14" className="edit-input"/>
                                 <div style={{display:"flex"}}>
-                                <input type="text" placeholder="20124" className="edit-input-date"/>
-                                <input type="text" placeholder="Milano" className="edit-input-date edit-input-city" style={{margin:"10px"}}/>
+                                <input type="text" value="20124" className="edit-input-date"/>
+                                <input type="text" value="Milano" className="edit-input-date edit-input-city" style={{margin:"10px"}}/>
                                 <select type="date"  className="edit-input-date">
                                     <option>ITA</option>
                                 </select>
@@ -80,7 +80,7 @@ render() {
                             <div style={{margin:"auto 10px auto 0px"}}>
                             <FaNewspaper/>
                             </div>
-                            <input placeholder="38346582934" type="text" className="edit-input"/>
+                            <input value="38346582934" type="text" className="edit-input"/>
                         </div>
                     </CardBodyContent>
                     </div>

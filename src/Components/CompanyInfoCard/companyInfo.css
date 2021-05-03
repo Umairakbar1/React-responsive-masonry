@@ -27,3 +27,9 @@
     border-radius: 40px;
     padding: 5px 10px 5px 10px;   
 }
+input:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
+}
