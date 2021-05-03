@@ -1,0 +1,12 @@
+.masonry-container{
+    width: 20%;
+    margin: auto;
+}
+.masonry-containers{
+    height: 100px;
+}
+.masonry-containerss{
+    height: 100px;
+    display: block;
+    width: 100%;
+}
