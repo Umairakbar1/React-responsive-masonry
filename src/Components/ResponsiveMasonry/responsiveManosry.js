@@ -19,7 +19,7 @@ class ResponsiveManosry extends Component {
     render() { 
         return ( 
             <React.Fragment>
-            <div  style={{width:"25%",margin:"auto"}}>
+            <div  style={{width:"20%",margin:"auto"}}>
                 <p style={{textAlign:"left",fontWeight:"600",color:"#404043",marginTop:"10px"}}>Main Public album</p>
             <ResponsiveMasonry
                 columnsCountBreakPoints={{10: 1, 400: 2}}
@@ -31,22 +31,22 @@ class ResponsiveManosry extends Component {
                         <img
                             
                             src={Image1}
-                            style={{width: "100%",height:"170px", display: "block",borderRadius:"10px"}}
+                            style={{width: "100%",height:"120px", display: "block",borderRadius:"10px"}}
                             alt=""
                         />
                         <img
                             src={Image2}
-                            style={{width: "100%", height:"200px",display: "block",borderRadius:"10px"}}
+                            style={{width: "100%", height:"150px",display: "block",borderRadius:"10px"}}
                             alt=""
                         />
                         <img
                             src={Image3}
-                            style={{width: "100%",height:"170px", display: "block",borderRadius:"10px"}}
+                            style={{width: "100%",height:"120px", display: "block",borderRadius:"10px"}}
                             alt=""
                         />
                             <img
                             src={Image4}
-                            style={{width: "100%",height:"200px", display: "block",borderRadius:"10px"}}
+                            style={{width: "100%",height:"150px", display: "block",borderRadius:"10px"}}
                             alt=""
                         />
                     {/* ))} */}
