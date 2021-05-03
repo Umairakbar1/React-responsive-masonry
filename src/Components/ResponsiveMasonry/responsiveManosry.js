@@ -19,34 +19,34 @@ class ResponsiveManosry extends Component {
     render() { 
         return ( 
             <React.Fragment>
-            <div  style={{width:"50%",margin:"auto"}}>
+            <div  style={{width:"25%",margin:"auto"}}>
                 <p style={{textAlign:"left",fontWeight:"600",color:"#404043",marginTop:"10px"}}>Main Public album</p>
             <ResponsiveMasonry
                 columnsCountBreakPoints={{10: 1, 400: 2}}
 
                 columnsCount={2}
             >
-                <Masonry gutter="10px">
+                <Masonry gutter="8px">
                     {/* {images.map((image, i) => ( */}
                         <img
                             
                             src={Image1}
-                            style={{width: "100%",height:"300px", display: "block",borderRadius:"10px"}}
+                            style={{width: "100%",height:"170px", display: "block",borderRadius:"10px"}}
                             alt=""
                         />
                         <img
                             src={Image2}
-                            style={{width: "100%", height:"400px",display: "block",borderRadius:"10px"}}
+                            style={{width: "100%", height:"200px",display: "block",borderRadius:"10px"}}
                             alt=""
                         />
                         <img
                             src={Image3}
-                            style={{width: "100%",height:"300px", display: "block",borderRadius:"10px"}}
+                            style={{width: "100%",height:"170px", display: "block",borderRadius:"10px"}}
                             alt=""
                         />
                             <img
                             src={Image4}
-                            style={{width: "100%",height:"300px", display: "block",borderRadius:"10px"}}
+                            style={{width: "100%",height:"200px", display: "block",borderRadius:"10px"}}
                             alt=""
                         />
                     {/* ))} */}
