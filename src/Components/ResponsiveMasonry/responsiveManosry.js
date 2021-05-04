@@ -13,7 +13,48 @@ const images = [
     //...
     Image3,
     Image4,
+    Image1,
+    Image2,
     //...
+    Image3,
+    Image4,    Image1,
+    Image2,
+    //...
+    Image3,
+    Image4,    Image1,
+    Image2,
+    //...
+    Image3,
+    Image4,    Image1,
+    Image2,
+    //...
+    Image3,
+    Image4,    Image1,
+    Image2,
+    //...
+    Image3,
+    Image4,    Image1,
+    Image2,
+    //...
+    Image3,
+    Image4,    Image1,
+    Image2,
+    //...
+    Image3,
+    Image4,    Image1,
+    Image2,
+    //...
+    Image3,
+    Image4,    Image1,
+    Image2,
+    //...
+    Image3,
+    Image4,    Image1,
+    Image2,
+    //...
+    Image3,
+    Image4,
+
     
 ]
 class ResponsiveManosry extends Component {
@@ -31,11 +72,12 @@ class ResponsiveManosry extends Component {
             <React.Fragment>
             <div className="masonry-container">
                 <p style={{textAlign:"left",fontWeight:"600",color:"#404043",marginTop:"10px"}}>Main Public album</p>
-            <ResponsiveMasonry
-                columnsCountBreakPoints={{10: 1, 400: 2}}
+            {/* <ResponsiveMasonry
+                columnsCountBreakPoints={{0: 1, 10: 2}}
                 columnsCount={2}
-            >
-                <Masonry gutter="8px">
+            > */}
+
+                {/* <Masonry gutter="8px" columnsCount={2}>
                     {images.map((image, i) => (
                         <img
                             id="image"
@@ -46,8 +88,38 @@ class ResponsiveManosry extends Component {
                         />
 
                      ))} 
+                </Masonry> */}
+                <Masonry gutter="auto" columnsCount={2}>
+                    {images.map((image, i) => (
+                        <div>
+                            <div >
+                            {
+                            i%2===0?
+                            <div >
+                            <img
+                            id="image"
+                            key={i}
+                            src={image}
+                            style={{width: "100%",margin:"10px 2px 0px -10px",height:"120px", display: "block",borderRadius:"10px"}}
+                            alt=""
+                            />
+                            </div>
+                            :
+                            <img
+                            id="image"
+                            key={i}
+                            src={image}
+                            style={i%2?{width: "100%",height:"149px",margin:"10px 2px 0px 0px", display: "block",borderRadius:"10px"}:{width: "100%",height:"120px",marginTop:"auto", display: "block",borderRadius:"10px"}}
+                            alt=""
+                            />
+                        }
+                            </div>
+                        </div>
+
+                     ))}
+                      
                 </Masonry>
-            </ResponsiveMasonry>
+            {/* </ResponsiveMasonry> */}
             </div>
             </React.Fragment>
          );
