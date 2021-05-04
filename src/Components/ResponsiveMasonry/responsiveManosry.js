@@ -76,20 +76,34 @@ class ResponsiveManosry extends Component {
                 columnsCountBreakPoints={{0: 1, 10: 2}}
                 columnsCount={2}
             > */}
-
-                {/* <Masonry gutter="8px" columnsCount={2}>
+                <Masonry gutter="8px" columnsCount={2}>
                     {images.map((image, i) => (
+                        <div>
+                            {i}
                         <img
                             id="image"
                             key={i}
                             src={image}
-                            style={i%2?{width: "100%",height:"149px", display: "block",borderRadius:"10px"}:{width: "100%",height:"120px", display: "block",borderRadius:"10px"}}
+                            style={i%2?
+                                {width:"100%",height:"150px", display: "block",borderRadius:"10px"}
+                                :
+                                i%3?
+                                {width:"100%",height:"120px", display: "block",borderRadius:"10px"}
+                                :
+                                i%4?
+                                {width:"100%",height:"150px", display: "block",borderRadius:"10px"}
+                                :
+                                i==0?
+                                {width:"100%",height:"120px", display: "block",borderRadius:"10px"}
+                                :
+                                {}
+                                }
                             alt=""
                         />
-
+                        </div>
                      ))} 
-                </Masonry> */}
-                <Masonry gutter="auto" columnsCount={2}>
+                </Masonry>
+                {/* <Masonry gutter="auto" columnsCount={2}>
                     {images.map((image, i) => (
                         <div>
                             <div >
@@ -118,7 +132,7 @@ class ResponsiveManosry extends Component {
 
                      ))}
                       
-                </Masonry>
+                </Masonry> */}
             {/* </ResponsiveMasonry> */}
             </div>
             </React.Fragment>
