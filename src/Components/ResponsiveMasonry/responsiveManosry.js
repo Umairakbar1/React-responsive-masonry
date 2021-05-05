@@ -71,7 +71,7 @@ const images = [
     ,
     {
         imgs:Image4,
-        CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
+        CSS:{height:"150px",width: "100%",display: "block",borderRadius:"10px"}
     }
 ]
 class ResponsiveManosry extends Component {
