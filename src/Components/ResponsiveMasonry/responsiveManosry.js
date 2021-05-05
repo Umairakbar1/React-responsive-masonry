@@ -68,6 +68,11 @@ const images = [
         imgs:Image3,
         CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
     }
+    ,
+    {
+        imgs:Image4,
+        CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
+    }
 ]
 class ResponsiveManosry extends Component {
     state = {  }
