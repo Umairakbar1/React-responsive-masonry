@@ -8,54 +8,66 @@ import Image4 from "../../Assests/Images/4.jpg";
 //      importing css files
 import "./responsiveMasonry.css";
 const images = [
-    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,
-    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,    Image1,
-    Image2,
-    //...
-    Image3,
-    Image4,
-
-    
+    {
+        imgs:Image1,
+        CSS:{height:"150px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image2,
+        CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image3,
+        CSS:{height:"150px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image4,
+        CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image1,
+        CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image2,
+        CSS:{height:"150px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image3,
+        CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image4,
+        CSS:{height:"150px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image1,
+        CSS:{height:"150px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image2,
+        CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image3,
+        CSS:{height:"150px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image4,
+        CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image1,
+        CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image2,
+        CSS:{height:"150px",width: "100%",display: "block",borderRadius:"10px"}
+    },
+    {
+        imgs:Image3,
+        CSS:{height:"120px",width: "100%",display: "block",borderRadius:"10px"}
+    }
 ]
 class ResponsiveManosry extends Component {
     state = {  }
@@ -79,25 +91,11 @@ class ResponsiveManosry extends Component {
                 <Masonry gutter="8px" columnsCount={2}>
                     {images.map((image, i) => (
                         <div>
-                            {i}
                         <img
                             id="image"
                             key={i}
-                            src={image}
-                            style={i%2?
-                                {width:"100%",height:"150px", display: "block",borderRadius:"10px"}
-                                :
-                                i%3?
-                                {width:"100%",height:"120px", display: "block",borderRadius:"10px"}
-                                :
-                                i%4?
-                                {width:"100%",height:"150px", display: "block",borderRadius:"10px"}
-                                :
-                                i==0?
-                                {width:"100%",height:"120px", display: "block",borderRadius:"10px"}
-                                :
-                                {}
-                                }
+                            src={image.imgs}
+                            style={image.CSS}
                             alt=""
                         />
                         </div>
